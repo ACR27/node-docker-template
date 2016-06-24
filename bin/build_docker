@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker build -f Dockerfile -t template .
+
+#!/bin/bash
