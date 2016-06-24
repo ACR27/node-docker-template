@@ -13,6 +13,7 @@ function doSomething(req, res) {
         query: queryParam
     }
     console.log("TEST");
+    console.log("TEST");
     resWrapper.send(res, response);
 }
 
