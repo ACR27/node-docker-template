@@ -1,8 +1,8 @@
-var wrapper = require('./response_wrapper');
+var resWrapper = require('./response_wrapper');
 
 
 function displayText(req, res) {
-    res.send("This is a template server. Check json / error routes");
+    res.send("This is a node-docker-template server. Check json / error routes");
 }
 
 function doSomething(req, res) {
@@ -12,7 +12,7 @@ function doSomething(req, res) {
         asdf: "LaLaLa",
         query: queryParam
     }
-    wrapper.send(res, response);
+    resWrapper.send(res, response);
 }
 
 function error(req, res) {
@@ -20,15 +20,11 @@ function error(req, res) {
     var error = {
         message: "This is an error",
     }
-    wrapper.err(res, error);
-}
-
-function init(app) {
-    app.get('/', displayText);
-    app.get('/json', doSomething);
-    app.get('/error', error);
+    resWrapper.err(res, error);
 }
 
 module.exports = {
-    init: init
+    displayText: displayText,
+    doSomething: doSomething,
+    error: error
 }

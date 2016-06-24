@@ -10,5 +10,21 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-githooks": "^0.6.0",
+    "grunt-mocha-cov": "^0.4.0",
+    "grunt-mocha-istanbul": "^5.0.1",
+    "grunt-mocha-test": "^0.12.7",
+    "istanbul": "^0.4.4",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "mocha-cobertura-reporter": "^1.0.4",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
   }
 }
