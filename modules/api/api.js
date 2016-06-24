@@ -12,6 +12,7 @@ function doSomething(req, res) {
         asdf: "LaLaLa",
         query: queryParam
     }
+    console.log("TEST");
     resWrapper.send(res, response);
 }
 
