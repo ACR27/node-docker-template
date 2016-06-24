@@ -1,11 +1,9 @@
 #!/bin/bash
  
  
- 
-export PATH=/usr/local/bin:/path/to/node:/path/to/node_bin:/path/to/phantomjs:/path/to/jscoverage:$PATH;
- 
- 
- 
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+  
 mkdir -p build
  
 npm install
