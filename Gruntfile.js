@@ -59,16 +59,18 @@ module.exports = function(grunt) {
             jenkins: {
                 src: ['test/**/*.js'],
                 options: {
-                    reporter: 'xunit',
-                    output: 'build/test-result.xml'
+                    require: ['chai'],
+                    reporter: 'xunit-file',
+                    output: 'build/test-result.xml',
+                    bail: false
                 }
             },
             cobertura: {
                 options: {
                     reporter: 'mocha-cobertura-reporter',
                     require: ['chai'],
-                    output: 'build/cobertura.xml'
-
+                    output: 'build/cobertura.xml',
+                    bail: false
                 },
                 src: ['test/**/*.js']
             }

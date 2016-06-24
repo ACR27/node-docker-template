@@ -25,6 +25,7 @@
     "mocha": "^2.5.3",
     "mocha-cobertura-reporter": "^1.0.4",
     "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "xunit-file": "^1.0.0"
   }
 }
