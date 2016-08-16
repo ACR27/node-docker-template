@@ -7,7 +7,7 @@ function wrapResponse(object, errors, code, meta) {
     var response = {
         meta: meta,
         status_code: code,
-        errors: errors,
+        error: errors,
         body: object
     }
 
